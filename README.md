@@ -54,3 +54,5 @@ Arduino pin 5 ---^^^330Ohm^^^---->I(RED LED)------Arduino Gnd
 Arduino pin 6 ---^^^330Ohm^^^---->I(YELLOW LED)---Arduino Gnd
 
 Arduino pin 7 ---^^^330Ohm^^^---->I(GREEN LED)----Arduino Gnd
+
+### Refer to the Connection Diagram Image in the repository
