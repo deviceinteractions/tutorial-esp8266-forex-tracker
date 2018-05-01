@@ -10,11 +10,6 @@ The ESP8266 connects to the internet via WiFi and grabs the EUR/USD Forex Rates 
 Based on the movement of this value, it sends a UART message to the Arduino Uno (Rise / Fall / Unchanged)
 The Arduino Uno receives this UART message and accordingly lights up an indication LED (Green / Red / Yellow)
 
-This project introduces some great libraries and functionalities:
-* Reliable WiFi connection
-* Software Serial
-* Serial communication interfacing between multiple modules
-
 ## The ESP8266 side
 The ESP8266 carries out the Internet-facing functions
 1. It connects to a defined WiFi network
@@ -30,7 +25,7 @@ The Arduino Uno functions here as an indication controller, based on the Serial 
 1. It defines the known messages (same as the ones defined on the ESP8266 side)
 2. It opens a Software Serial bus and listens for messages
 3. On receiving a message, it compares it with the know messages
-4. On finding a match, it lights up the corresponding LED (Green for RISE, RED for FALL, Yellow for CONST/unchanged)
+4. On finding a match, it lights up the corresponding LED (Green for RISE, Red for FALL, Yellow for CONST/unchanged)
 
 ## Connections:
 ### ESP8266 to Arduino Uno
@@ -44,6 +39,8 @@ The Arduino Uno functions here as an indication controller, based on the Serial 
 
       (ESP) Gnd    ->     (Uno) Gnd
       
+Make sure to connect only the ESP8266/NodeMCU to a PC via USB for Serial messages as well as power supply
+
 ### Arduino Uno to LEDs
 pin 5 -> Red LED (via 330 Ohm LED)
 pin 6 -> Yellow LED (via 330 Ohm LED)
