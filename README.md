@@ -3,6 +3,8 @@ An ESP8266 + Arduino Uno Project that indicates the movement of a Forex Exchange
 
 Created using the ESP8266 + Arduino Kit
 
+Refer to this tutorial : https://blog.device-interactions.com/2018/05/a-real-time-forex-tracker-with-esp8266.html
+
 ## Overview
 This project demonstrates an advanced implementation using the ESP8266/NodeMCU along with the Arduino Uno
 
